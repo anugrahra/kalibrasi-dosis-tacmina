@@ -15,8 +15,11 @@ function hitung() {
   let dosis = ((konsentrasi * 10000) / (debitIPA * 1000)) * qmaxdetik;
 
   // show hasil hitung
-	document.getElementById("qmax").innerHTML = "Qmax Pompa = " + qmax.toFixed(2) + " ml/detik";
-  document.getElementById("dosis").innerHTML = "Dosis Stroke 1 = " + dosis.toFixed(2) + " mg/l";
+	document.getElementById("qmax").innerHTML = parseFloat(qmax);
+  document.getElementById("getstroke").innerHTML = parseFloat(stroke);
+  document.getElementById("getwaktu").innerHTML = parseFloat(waktu);
+  document.getElementById("getvolume").innerHTML = parseFloat(volume);
+  document.getElementById("getqmaxdetik").innerHTML = parseFloat(qmaxdetik);
 
   let strokePompa = [];
   for (s = 0; s <= 8; s+=0.1) {
